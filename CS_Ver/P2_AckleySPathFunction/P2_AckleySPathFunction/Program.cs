@@ -372,7 +372,7 @@ namespace P2_AckleySPathFunction
                 bool append = true;
                 var config = new CsvConfiguration(CultureInfo.InvariantCulture);
                 config.HasHeaderRecord = !append;
-                using (var writer = new StreamWriter("C:/Users/quack/Desktop/AckleySPathFunction.csv", append))
+                using (var writer = new StreamWriter("./AckleySPathFunction.csv", append))
                 using (var csv = new CsvWriter(writer, config))
                 {
                     csv.WriteRecords(records);
